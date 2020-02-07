@@ -26,6 +26,6 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({template: './src/index.html'}),
-        // new BundleAnalyzerPlugin(),
+        // new BundleAnalyzerPlugin(),  // for test
     ]
 }
