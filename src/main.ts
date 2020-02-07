@@ -5,10 +5,10 @@ import './card.scss';
 const container = document.getElementById('container');
 const cardList = [{
     title: 'Title A',
-    desc: 'test test\ntest\ntest'
+    desc: 'test test test test'
 }, {
     title: 'Title B',
-    desc: 'descdescdescdescdescdescdesdesafasfagewgasfdqfeasfsdafas'
+    desc: 'longgggggggggggggggggggggggggggggggtest'
 }, {
     title: 'Title Error',
     desc: 'error',
