@@ -5,7 +5,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-    mode: 'development',
     entry: {
         main: './src/main.ts',
     },
@@ -39,9 +38,6 @@ module.exports = {
                 exclude: /node_modules/
             }
         ]
-    },
-    devServer: {
-        contentBase: './dist'
     },
     plugins: [
         new CleanWebpackPlugin(),
