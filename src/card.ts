@@ -8,6 +8,10 @@ export class Card {
     }
 
     genElement() {
+        if (this.desc.toLowerCase() === 'error') {
+            throw Error('custom error');
+        }
+
         const card = document.createElement('div');
         const title = document.createElement('h2');
         title.innerHTML = this.title;

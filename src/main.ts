@@ -8,6 +8,9 @@ const cardList = [{
 }, {
     title: 'Title B',
     desc: 'descdescdescdescdescdescdesdesafasfagewgasfdqfeasfsdafas'
+}, {
+    title: 'Title Error',
+    desc: 'error',
 }]
 
 lodash.each(cardList, cardInfo => {
