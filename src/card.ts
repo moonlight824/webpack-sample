@@ -8,18 +8,20 @@ export class Card {
     }
 
     genElement() {
-        if (this.desc.toLowerCase() === 'error') {
-            throw Error('custom error');
-        }
+        // if (this.desc.toLowerCase() === 'error') {
+        //     throw Error('custom error');
+        // }
 
         const card = document.createElement('div');
         const title = document.createElement('h2');
         title.innerHTML = this.title;
         const desc = document.createElement('div');
+        desc.className = 'desc';
         desc.innerHTML = this.desc;
 
         card.appendChild(title)
         card.appendChild(desc);
+        card.className = 'card';
         return card;
     }
 }

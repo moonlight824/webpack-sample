@@ -1,5 +1,6 @@
 import lodash from 'lodash';
 import { Card } from './card';
+import './card.scss';
 
 const container = document.getElementById('container');
 const cardList = [{
