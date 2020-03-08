@@ -25,12 +25,7 @@ module.exports = {
             {
                 test: /\.s[ac]ss/,
                 use: [
-                    {
-                        loader: 'style-loader',
-                        options: {
-                            injectType: 'linkTag'
-                        }
-                    },
+                    // 'style-loader',
                     MiniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader'
