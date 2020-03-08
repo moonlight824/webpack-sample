@@ -13,7 +13,8 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].bundle.js'
+        filename: '[name].[contenthash].js',
+        chunkFilename: '[id].[countenthash].chunk.js'
     },
     module: {
         rules: [
@@ -28,6 +29,7 @@ module.exports = {
                     // 'style-loader',
                     MiniCssExtractPlugin.loader,
                     'css-loader',
+                    'postcss-loader',
                     'sass-loader'
                 ],
                 exclude: /node_modules/
@@ -37,7 +39,9 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({template: './src/index.html'}),
-        new MiniCssExtractPlugin(),
+        new MiniCssExtractPlugin({
+            filename: '[name].[contenthash].css'
+        }),
         // new BundleAnalyzerPlugin(),  // for test
     ]
 }
